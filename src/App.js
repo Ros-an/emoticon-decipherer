@@ -10,7 +10,18 @@ const emojiDict = {
   "🥡": "takeout box",
   "❤️": "love",
   "😑": "annoyance",
-  "🤓": "nerd"
+  "🤓": "nerd",
+  "😉": "winking",
+  "🙃": "upside-down",
+  "🤩": "star-struck",
+  "🤪": "Zany",
+  "🤗": "Hugging",
+  "🤫": "shushing",
+  "🤔": "thinking",
+  "🤐": "zipper-mouth",
+  "😐": "neutral",
+  "😑": "expressionless",
+  "😏": "smirking"
 };
 
 const emojis = Object.keys(emojiDict);
@@ -40,11 +51,7 @@ export default function App() {
         <h1>emoticon-decipherer</h1>
       </div>
       <div className="App">
-        <input
-          onChange={changeHandler}
-          value={emoji}
-          placeholder={"search for your emoji"}
-        />
+        <input onChange={changeHandler} placeholder={"search for your emoji"} />
         <h2> {emoji} </h2>
         <h3> {meaning} </h3>
 
