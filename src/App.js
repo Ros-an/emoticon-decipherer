@@ -53,7 +53,7 @@ export default function App() {
       <div className="App">
         <input onChange={changeHandler} placeholder={"search for your emoji"} />
         <h2> {emoji} </h2>
-        <h3> {meaning} </h3>
+        <h3> {meaning}  </h3>
 
         {emojis.map((emoji) => (
           <span
